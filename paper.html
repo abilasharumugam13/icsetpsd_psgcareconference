@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+
+        <title>PSG CARE</title>
+        <meta content="" name="description" />
+        <meta content="" name="keywords" />
+
+        <!-- Favicons -->
+        <link href="./assets/img/favicon.ico" rel="icon" />
+        <link href="./assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+            rel="stylesheet"
+        />
+
+        <!-- Vendor CSS Files -->
+        <link href="./assets/vendor/aos/aos.css" rel="stylesheet" />
+        <link
+            href="./assets/vendor/bootstrap/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="./assets/vendor/bootstrap-icons/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <link
+            href="./assets/vendor/boxicons/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link
+            href="./assets/vendor/glightbox/css/glightbox.min.css"
+            rel="stylesheet"
+        />
+        <link href="./assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+        <link
+            href="./assets/vendor/swiper/swiper-bundle.min.css"
+            rel="stylesheet"
+        />
+        <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+         
+        <!-- Template Main CSS File -->
+        <link href="./assets/css/style.css" rel="stylesheet" />
+        
+
+        <!-- =======================================================
+  * Template Name: Arsha - v4.3.0
+  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    </head>
+    <style>
+        /* CSS for animating text */
+        .animate-character {
+            font-weight: bold;
+            background-image: linear-gradient(
+                -225deg,
+                #231557 0%,
+                #44107a 29%,
+                #ff1361 67%,
+                #fff800 100%
+            );
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .animate-character-2 {
+            font-weight: bold;
+            background-image: linear-gradient(
+                -225deg,
+                #d93fa3 0%,
+                #e78427 29%,
+                #4580ff 67%,
+                #fe572d 100%
+            );
+            background-size: auto auto;
+            background-clip: border-box;
+            background-size: 200% auto;
+            color: #fff;
+            background-clip: text;
+            text-fill-color: transparent;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textclip 2s linear infinite;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        @keyframes textclip {
+            to {
+                background-position: 200% center;
+            }
+        }
+    </style>
+    <style>
+        #main-hdng {
+            text-transform: uppercase;
+            background: linear-gradient(to right, #30cfd0 0%, #330867 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        section {
+            line-height: 2rem;
+        }
+
+        .fl-table {
+            border-radius: 5px;
+            font-weight: normal;
+            border: none;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 100%;
+            white-space: nowrap;
+            background-color: white;
+        }
+
+        .fl-table td,
+        .fl-table th {
+            text-align: center;
+            padding: 8px;
+        }
+
+        .fl-table td {
+            border-right: 1px solid #f8f8f8;
+        }
+
+        .fl-table thead th {
+            color: #ffffff;
+            background: #4fc3a1;
+        }
+
+        .fl-table thead th:nth-child(odd) {
+            color: #ffffff;
+            background: #324960;
+        }
+
+        .fl-table tr {
+            font-family: inherit;
+            font-size: 1rem;
+        }
+
+        .fl-table tr:nth-child(even) {
+            background: #f8f8f8;
+        }
+
+        /* Responsive */
+
+        @media (max-width: 767px) {
+            .fl-table {
+                display: block;
+                width: 100%;
+            }
+            .table-wrapper:before {
+                content: "Scroll horizontally >";
+                display: block;
+                text-align: right;
+                font-size: 11px;
+                color: white;
+                padding: 0 0 10px;
+            }
+            .fl-table thead,
+            .fl-table tbody,
+            .fl-table thead th {
+                display: block;
+            }
+            .fl-table thead th:last-child {
+                border-bottom: none;
+            }
+            .fl-table thead {
+                float: left;
+            }
+            .fl-table tbody {
+                width: auto;
+                position: relative;
+                overflow-x: auto;
+            }
+            .fl-table td,
+            .fl-table th {
+                padding: 20px 0.625em 0.625em 0.625em;
+                height: 60px;
+                vertical-align: middle;
+                box-sizing: border-box;
+                overflow-x: hidden;
+                overflow-y: auto;
+                width: 120px;
+                font-size: 13px;
+                text-overflow: ellipsis;
+            }
+            .fl-table thead th {
+                text-align: left;
+                border-bottom: 1px solid #f7f7f9;
+            }
+            .fl-table tbody tr {
+                display: table-cell;
+            }
+            .fl-table tbody tr:nth-child(odd) {
+                background: none;
+            }
+            .fl-table tr:nth-child(even) {
+                background: transparent;
+            }
+            .fl-table tr td:nth-child(odd) {
+                background: #f8f8f8;
+                border-right: 1px solid #e6e4e4;
+            }
+            .fl-table tr td:nth-child(even) {
+                border-right: 1px solid #e6e4e4;
+            }
+            .fl-table tbody td {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+    <!--Menu Navigation Style-->
+    <style>
+        nav {
+         background-color: rgba(52, 152, 219, 0); /* Transparent background */
+     }
+
+     ul {
+         list-style: none;
+         margin: 0;
+         padding: 0;
+         display: flex;
+     }
+
+     li {
+         margin-right: 10px;
+         position: relative;
+     }
+
+     a {
+         text-decoration: none;
+         color: #fff;
+         padding: 15px;
+         display: block;
+         position: relative;
+     }
+
+     a:hover {
+         background-color: #555;
+     }
+
+     ul ul {
+         display: none;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         background-color: #3498db; /* Change background color to blue */
+         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+         border-radius: 0 0 5px 5px;
+     }
+
+     #li1:after {
+         content: "▼";
+         position: absolute;
+         top: 50%;
+         right: 0;
+         transform: translateY(-50%);
+     }
+
+     li:hover > ul {
+         display: block;
+     }
+
+     ul ul li {
+         width: 200px;
+         margin: 0;
+     }
+
+     ul ul a {
+         padding: 10px;
+         color: #fff; /* Change text color to white */
+     }
+ </style>
+ <style>
+
+  
+  .login-box h2 {
+    margin: 0 0 0px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .login-box .user-box {
+    position: relative;
+  }
+  
+  .login-box .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+  }
+  .login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+  
+  .login-box .user-box input:focus ~ label,
+  .login-box .user-box input:valid ~ label {
+    top: 0px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+  }
+  
+  .login-box form a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  
+  .login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+  }
+  
+  .login-box a span {
+    position: absolute;
+    display: block;
+  }
+  
+  .login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+  }
+  
+  @keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+  }
+  
+  @keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: .5s
+  }
+  
+  @keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+  
+  .login-box a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: .75s
+  }
+  
+  @keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+    </style>
+    <body>
+        <!-- ======= Header ======= -->
+        <header id="header" class="fixed-top header-inner-pages">
+            <div class="container d-flex align-items-center">
+                <h1 class="logo me-auto"><a href="#">ICSSICC-24</a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html" class="logo me-auto"><img src="./assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <a href="">About the conference</a>
+                            <ul>
+                                <li id="li1"><a href="Scope.html">Abput PSG CARE</a></li>
+                                <li><a href="call.html">Call for Paper</a></li>
+                                <!--<li><a href="#">Digital Marketing</a></li>-->
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Committee.html">Committee</a>
+                            <ul>
+                                <li><a href="Committee.html#national">National level</a></li>
+                                <li><a href="Committee.html#international">International level</a></li>
+                                <!--<li><a href="./Review/Reviewer.pdf">Reviewer’s</a></li>-->
+                            </ul>
+                        </li>
+                        <li><a href="review.html">Review System</a></li>
+                        <li>
+                            <a href="#">Registration</a>
+                            <ul>
+                                <li><a href="#">Online Registration</a></li>
+                                <li><a href="paper.html">Paper Submission</a></li>
+                               
+                            </ul>
+                        </li>
+                        <!--<li>
+                            <a href="#">Downloads</a>
+                            <ul>
+                                <li><a href="">Paper Template</a></li>
+                                
+                              
+                            </ul>
+                        </li>-->
+                    </ul>
+                </nav>
+                
+                
+                <!-- .navbar -->
+            </div>
+        </header>
+        <!-- End Header -->
+
+        <main id="main">
+            <!-- ======= Breadcrumbs ======= -->
+            <section id="breadcrumbs" class="breadcrumbs" style="display: flex">
+                <img
+                    src="./images/PSGCARE-Logo.png"
+                    style="
+                        flex: 1;
+                        margin: auto;
+                        width: 50px;
+                        height: 50px;
+                        object-fit: contain;
+                    "
+                />
+                <div class="container" style="flex: 5; margin-top: 1rem">
+                    <h1 id="main-hdng">
+                        INTERNATIONAL CONFERENCE ON SMART SYSTEM FOR INTEGRATED COMPUTING AND COMMUNICATION-ICSSICC-24
+
+                    </h1>
+                </div>
+                <!--<img
+                    src="./images/EAI-Logo.png"
+                    style="
+                        flex: 1;
+                        margin: auto;
+                        width: 50px;
+                        height: 50px;
+                        object-fit: contain;
+                    "
+                />-->
+            </section>
+            <!-- End Breadcrumbs -->
+            <br />
+            
+        <!--Scope and Benefits Page1-->    
+        <section id="about" class="inner-page">
+            <div class="container">
+                <h2>Paper Submission</h2>
+                <p style="text-align: justify">
+                    <b>Submission Guidelines:</b> We invite authors to submit original research papers, case studies, and review articles relevant to the conference themes. Submissions must adhere to the following guidelines:<br>
+                     <!--1.Papers should be written in English and formatted according to the conference template.<br>
+                     2.All submissions will undergo a peer-review process by the program committee.<br>
+                     3.Accepted papers will be published in the conference proceedings and indexed in reputable <br> -->
+                Accepted full papers<b>[12-15 pages]</b><br>
+                Accepted Short paper<b>[6-8 pages]</b>
+                </p>
+                <!--<p><b>Submit Your Paper</b></p>
+                <div class="login-box">
+                    <form>
+                      <a href="https://cmt3.research.microsoft.com/ICSETPSD2024">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Paper Submission
+                      </a>
+                    </form>
+                   </div>-->
+                
+                
+                
+            </div>
+        </section>
+        </main>
+        <!-- End #main -->
+
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+            <div
+                style="
+                    border-top: 2px solid #30cfd0;
+                    padding-top: 10px !important;
+                    margin-top: 50px !important;
+                "
+                class="footer-top"
+            >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h3>PSG CARE</h3>
+                            <p>
+                                R.No. G201, <br />
+                                PSG College of Technology, <br />
+                                Avinashi Rd, <br />
+                                Peelamedu, <br />
+                                Tamil Nadu 641004.<br /><br />
+                                <strong>Phone:</strong><br />
+                                +91-9443514788<br />
+                                <strong>Email:</strong><br />
+                                icsetpsd24@gmail.com<br />
+                            </p>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="https://psgcare.org/">PSG CARE</a>
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="https://psgcare.org/news-events/"
+                                        >News and Events</a
+                                    >
+                                </li>
+                                <li>
+                                    <i class="bx bx-chevron-right"></i>
+                                    <a href="https://psgcare.org/recent-blog/"
+                                        >PSG CARE Blog</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+
+                      
+                    </div>
+                </div>
+            </div>
+
+            <div class="container footer-bottom clearfix">
+                <div class="copyright">
+                    Copyright:<strong><span>PSG CARE</span></strong
+                    >. All Rights Reserved
+                </div>
+                <div class="credits">
+                    <!-- All the links in the footer should remain intact. -->
+                    <!-- You can delete the links only if you purchased the pro version. -->
+                    <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                    <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
+                    Designed by IT(2025-Batch Students)
+                </div>
+            </div>
+        </footer>
+        <!-- End Footer -->
+
+        <div id="preloader"></div>
+        <a
+            href="#"
+            class="back-to-top d-flex align-items-center justify-content-center"
+            ><i class="bi bi-arrow-up-short"></i
+        ></a>
+
+        <!-- Vendor JS Files -->
+        <script src="./assets/vendor/aos/aos.js"></script>
+        <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/vendor/glightbox/js/glightbox.min.js"></script>
+        <script src="./assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+        <script src="./assets/vendor/php-email-form/validate.js"></script>
+        <script src="./assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="./assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+        <!-- Template Main JS File -->
+        <script src="./assets/js/main.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const targetDiv = document.getElementById("session-schedule-scroll");
+            
+                if (targetDiv) {
+                    // Calculate the target scroll position with the offset
+                    const offset = -300; // Adjust the offset as needed
+                    const targetScrollPosition = targetDiv.offsetTop + offset;
+                    console.log(targetScrollPosition)
+                    // Scroll to the adjusted position
+                    window.scrollTo({
+                        top: targetScrollPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        </script>
+       
+    </body>
+</html>
